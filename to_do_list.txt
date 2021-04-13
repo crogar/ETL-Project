@@ -1,9 +1,0 @@
-1.- https://www.kaggle.com/mczielinski/bitcoin-historical-data
-2.- Getting data from https://financialmodelingprep.com/developer/docs/#Historical-Cryptocurrencies-Price
-  |-------> If not allowed: then we need to find a dataset for historical data containing price by minute.
-3.- Create the SQL Schema 
-4.- Populating the Tables
-5.- Cleaning data
-6.- Joining tables if necessary.
-7.- Creating/exporting final SQLite file.
-
