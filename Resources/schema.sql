@@ -1,12 +1,12 @@
-CREATE TABLE "daily_Price" (
-    "id" int   NOT NULL,
+CREATE TABLE "daily_price" (
+    id SERIAL NOT NULL,
     "coin_id" int   NOT NULL,
     "date" DATE   NOT NULL,
     "open" decimal   NOT NULL,
     "high" decimal   NOT NULL,
     "low" decimal   NOT NULL,
     "close" decimal   NOT NULL,
-    CONSTRAINT "pk_daily_Price" PRIMARY KEY (
+    CONSTRAINT "pk_daily_price" PRIMARY KEY (
         "id"
      )
 );
@@ -22,7 +22,7 @@ CREATE TABLE "coins" (
 );
 
 CREATE TABLE "hourly_price" (
-    "id" int   NOT NULL,
+    id SERIAL NOT NULL,
     "coin_id" int   NOT NULL,
     "date" DATE   NOT NULL,
     "open" decimal   NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE "hourly_price" (
      )
 );
 
-ALTER TABLE "daily_Price" ADD CONSTRAINT "fk_daily_Price_coin_id" FOREIGN KEY("coin_id")
+ALTER TABLE "daily_price" ADD CONSTRAINT "fk_daily_price_coin_id" FOREIGN KEY("coin_id")
 REFERENCES "coins" ("id");
 
 ALTER TABLE "hourly_price" ADD CONSTRAINT "fk_hourly_price_coin_id" FOREIGN KEY("coin_id")
