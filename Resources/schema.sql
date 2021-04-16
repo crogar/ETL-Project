@@ -1,7 +1,7 @@
 CREATE TABLE "daily_price" (
     id SERIAL ,
     "coin_id" int   ,
-    "date" DATE   ,
+    "date" VARCHAR,
     "open" decimal   ,
     "high" decimal   ,
     "low" decimal   ,
@@ -24,7 +24,7 @@ CREATE TABLE "coins" (
 CREATE TABLE "hourly_price" (
     id SERIAL ,
     "coin_id" int   ,
-    "date" DATE   ,
+    "date" VARCHAR,
     "open" decimal   ,
     "high" decimal   ,
     "low" decimal   ,
