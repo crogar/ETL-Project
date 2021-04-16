@@ -1,34 +1,34 @@
 CREATE TABLE "daily_price" (
-    id SERIAL NOT NULL,
-    "coin_id" int   NOT NULL,
-    "date" DATE   NOT NULL,
-    "open" decimal   NOT NULL,
-    "high" decimal   NOT NULL,
-    "low" decimal   NOT NULL,
-    "close" decimal   NOT NULL,
+    id SERIAL ,
+    "coin_id" int   ,
+    "date" DATE   ,
+    "open" decimal   ,
+    "high" decimal   ,
+    "low" decimal   ,
+    "close" decimal   ,
     CONSTRAINT "pk_daily_price" PRIMARY KEY (
         "id"
      )
 );
 
 CREATE TABLE "coins" (
-    "id" int   NOT NULL,
-    "coin_name" varchar(50)   NOT NULL,
-    "coin_symbol" varchar(50)   NOT NULL,
-    "latest_price" decimal   NOT NULL,
+    "id" int   ,
+    "coin_name" varchar(50)   ,
+    "coin_symbol" varchar(50)   ,
+    "latest_price" decimal   ,
     CONSTRAINT "pk_coins" PRIMARY KEY (
         "id"
      )
 );
 
 CREATE TABLE "hourly_price" (
-    id SERIAL NOT NULL,
-    "coin_id" int   NOT NULL,
-    "date" DATE   NOT NULL,
-    "open" decimal   NOT NULL,
-    "high" decimal   NOT NULL,
-    "low" decimal   NOT NULL,
-    "close" decimal   NOT NULL,
+    id SERIAL ,
+    "coin_id" int   ,
+    "date" DATE   ,
+    "open" decimal   ,
+    "high" decimal   ,
+    "low" decimal   ,
+    "close" decimal   ,
     CONSTRAINT "pk_hourly_price" PRIMARY KEY (
         "id"
      )
